@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1748E"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/my_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="347dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/picture">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_anindita_s_info"
+            android:textSize="25sp"
+            android:textColor="#300212"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+
+     />
+
+        <Button
+            android:id="@+id/scl"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E7F8E"
+            android:text="School">
+
+        </Button>
+
+        <Button
+            android:id="@+id/clg"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E7F8E"
+            android:text="College">
+
+
+        </Button>
+        <Button
+            android:id="@+id/varsity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E7F8E"
+            android:text="University">
+
+        </Button>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E7F8E"
+            android:text="Address">
+
+        </Button>
+        <TextView
+            android:id="@+id/set_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anindita Das"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="#CDEEF3"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
