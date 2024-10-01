@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#B4E3F8"
+    tools:context=".Assignment2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taste of your music"
+        android:textSize="25sp"
+        android:textColor="#300212"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+        <CheckBox
+            android:id="@+id/classical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Classical"/>
+        <CheckBox
+            android:id="@+id/pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Pop"/>
+        <CheckBox
+            android:id="@+id/folk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Folk"/>
+        <CheckBox
+            android:id="@+id/band"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Band"/>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/myCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/Origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select origin"
+            android:textSize="25sp"
+            android:textColor="#300212"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bngla" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set volume"
+        android:textSize="25sp"
+        android:textColor="#300212"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+
+    <SeekBar
+        android:id="@+id/mySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRatingBar" />
+
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ready to listen a music "
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mySeekBar" />
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate us"
+        android:textSize="25sp"
+        android:textColor="#300212"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+    <RatingBar
+        android:id="@+id/myRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/myRadioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:numStars="5"
+        android:stepSize="1.0" />
+</LinearLayout>

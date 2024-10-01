@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView set_text= findViewById(R.id.set_text);
+        Button assignment= findViewById(R.id.assignment);
+        assignment.setOnClickListener(v ->{
+            Intent intent = new Intent(MainActivity.this, Assignments.class);
+            startActivity(intent);
+        });
         Button schoolButton = findViewById(R.id.scl);
         schoolButton.setOnClickListener(v -> {
             set_text.setText("School is Barlekha Girls High School");
