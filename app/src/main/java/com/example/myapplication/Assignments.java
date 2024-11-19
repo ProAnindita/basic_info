@@ -28,6 +28,14 @@ public class Assignments extends AppCompatActivity {
             Intent intent = new Intent(Assignments.this, Assignment3.class);
             startActivity(intent);
         });
+        a4.setOnClickListener(v ->{
+            Intent intent = new Intent(Assignments.this, Assignment4.class);
+            startActivity(intent);
+        });
+        a5.setOnClickListener(v ->{
+            Intent intent = new Intent(Assignments.this, ExpandableListActivity.class);
+            startActivity(intent);
+        });
 
     }
 }
