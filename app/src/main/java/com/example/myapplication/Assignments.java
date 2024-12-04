@@ -20,6 +20,7 @@ public class Assignments extends AppCompatActivity {
         Button a3= findViewById(R.id.a3);
         Button a4= findViewById(R.id.a4);
         Button a5= findViewById(R.id.a5);
+        Button a55= findViewById(R.id.a5_1);
         a2.setOnClickListener(v ->{
             Intent intent = new Intent(Assignments.this, Assignment2.class);
             startActivity(intent);
@@ -36,6 +37,11 @@ public class Assignments extends AppCompatActivity {
             Intent intent = new Intent(Assignments.this, ExpandableListActivity.class);
             startActivity(intent);
         });
+        a55.setOnClickListener(v ->{
+            Intent intent = new Intent(Assignments.this, RecyclerViewActivity.class);
+            startActivity(intent);
+        });
+
 
     }
 }

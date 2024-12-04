@@ -61,6 +61,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#0E7F8E"
+            android:text="Assignment 4.1">
+
+        </Button>
+        <Button
+            android:id="@+id/a5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0E7F8E"
             android:text="Assignment 5">
 
         </Button>
